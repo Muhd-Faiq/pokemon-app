@@ -1,0 +1,29 @@
+<div class="container">
+    <kendo-grid [kendoGridBinding]="gridView" [pageable]="true" [pageSize]="20" class="table">
+        <kendo-grid-column field="name" title="Name" [class]="'text-center'"> </kendo-grid-column>
+        <kendo-grid-column field="url" title="Link" [class]="'text-center'">
+            <ng-template kendoGridCellTemplate let-dataItem>
+                <button (click)='getAbility(dataItem.url)'>
+                <!-- <a [href]="dataItem.url"> -->
+                    <img class="img-logo img-fluid" src="./assets/image/pikachu-icon.png" alt="Pikachu-Icon">
+                <!-- </a> -->
+                </button>
+            </ng-template>
+        </kendo-grid-column>
+    </kendo-grid>
+    <div id="popup-box" class="modal" *ngIf="isShowPopup">
+        <div class="content">
+            <div class="container-icon">
+                <button mat-icon-button (click)="closePopUp()">
+                    <mat-icon svgIcon="alpha-x-circle-outline"></mat-icon>
+                </button>
+            </div>
+            <h1 style="color: green;">
+                {{ability.name}}
+            </h1>
+            <b>
+                <p>{{effectDefinition.effect}}</p>
+            </b>
+        </div>
+    </div>
+</div>

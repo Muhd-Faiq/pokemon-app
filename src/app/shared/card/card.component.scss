@@ -1,0 +1,27 @@
+.demo {
+    display: flex;
+    justify-content: center;
+    min-height: 470px;
+    margin: 15px;
+}
+.k-card-body h4 {
+    text-align: center;
+}
+.recipe-wrap {
+    padding-top: 12px;
+}
+.recipe-wrap div {
+    color: #fff;
+}
+
+.k-card-actions button {
+    background-color:rgb(18, 133, 126);
+}
+.k-card-actions button:hover{
+    opacity: 0.5;
+    background-color:rgb(18, 133, 126);
+}
+.k-button-text {
+    color:white;
+}
+

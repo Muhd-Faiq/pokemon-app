@@ -1,0 +1,37 @@
+
+.fancy-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .fancy-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow effect to the title */
+  }
+  
+  .fancy-subtext {
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  .fancy-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #ffffff; /* Button background color */
+    border: none;
+    border-radius: 8px; /* Rounded corners for the button */
+    cursor: pointer;
+  }

@@ -1,0 +1,24 @@
+<div class="demo">
+    <kendo-card>
+      <img
+        kendoCardMedia
+        src={{imageUrl}}
+      />
+      <kendo-card-body>
+        <h4>{{title}}</h4>
+        <div>
+          <hr kendoCardSeparator />
+          <div class="recipe-wrap">
+            {{subtitle}}
+            <div>{{ action.text }}</div>
+          </div>
+        </div>
+      </kendo-card-body>
+      <kendo-card-actions
+        layout="stretched"
+        [actions]="cardActions"
+        (action)="onActionClick($event)"
+      >
+      </kendo-card-actions>
+    </kendo-card>
+  </div>
